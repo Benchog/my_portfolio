@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Benchog Patrick | Portfolio</title>
+  <link rel="stylesheet" href="b.style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="navbar">
+      <div class="logo">BP</div>
+  
+      <!-- Toggle Button (Hamburger Icon) -->
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        &#9776;
+      </button>
+  
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <img src="IMC_1078.jpg" alt="Benchog Patrick" class="hero-img"/>
+      <h1>Benchog Patrick</h1>
+      <h2 class="h2">Mechanical Engineer | Future Tech Innovator</h2>
+      <p>Passionate about solving tomorrow’s problems with today’s creativity and engineering brilliance.</p>
+      <a href="#contact" class="hero-btn">Let’s Connect</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a results-driven Mechanical Engineering graduate with a deep interest in innovation, emerging technologies, and sustainable solutions. My portfolio is a reflection of relentless growth, curiosity, and a mission to build the future.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><i class="fas fa-cogs"></i><span>Mechanical Design</span></div>
+      <div class="skill"><i class="fas fa-code"></i><span>Python & JS</span></div>
+      <div class="skill"><i class="fas fa-solid fa-tools"></i><span>Maintenance</span></div>
+      <div class="skill"><i class="fas fa-drafting-compass"></i><span>Solid Edge</span></div>
+      <div class="skill"><i class="fas fa-database"></i><span>Data Analysis</span></div>
+      <div class="skill"><i class="fas fa-rocket"></i><span>Innovation Thinking</span></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Project cards go here -->
+      <div class="project-card">
+        <h3>Water Treatment System</h3>
+        <p>Designed and built a low-cost treatment unit using biochar for rural communities in Ghana.</p>
+      </div>
+      <div class="project-card">
+        <h3>Voice Assistant Prototype</h3>
+        <p>Developed a smart assistant using Dialogflow to outperform traditional models like Siri.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <h2>Experience & Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>National Service – Margins ID Group</h3>
+        <p>Blending engineering skills into a corporate environment with excellence in adaptability and professionalism.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>BSc Mechanical Engineering – UDS, Ghana</h3>
+        <p>Focused on thermodynamics, machine design, sustainability, and real-world innovation projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>If you're looking for someone innovative, reliable, and driven — let’s talk!</p>
+    <form action="https://formspree.io/f/mwkggqjp" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with ❤️ by Optimistic | © 2025 Benchog Patrick</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+  
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      toggle.textContent = navLinks.classList.contains('active') ? '✖' : '☰';
+    });
+  </script>
+  
+</body>
+</html>
